@@ -18,8 +18,8 @@ class InsertionSort:
         """Inserts the 'Transition element' into its correct position in the sorted portion of the array."""
         key = self.array[i]
         t= i-1
-        while i> = 0 and key < self.array[t]:
-            self.swap(i, i + 1)
+        while t>= 0 and key < self.array[t]:
+            self.swap(t, t + 1)
             t=t-1
         self.array[t + 1] = key
 
