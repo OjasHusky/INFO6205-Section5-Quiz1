@@ -16,12 +16,12 @@ class InsertionSort:
 
     def insert(self, i):
         """Inserts the 'Transition element' into its correct position in the sorted portion of the array."""
-        for ele in range(1,len(i)):
-        key = i[ele]
-        t= ele-1
-        while ele> = 0 and key<i[t]:
-            self.swap(ele, ele + 1)
-            ele = ele-1
-        ele[t+1] = key
+        key = array[i]
+        t= i-1
+        while i> = 0 and key < array[t]:
+            self.swap(i, i + 1)
+            t=t-1
+        array[t+1] = key
+
 
 
